@@ -13,12 +13,12 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 200px;
-    height: 200px;
+    width: 260px;
+    height: 260px;
     border: 15px solid red;
     border-radius: 50%;
     margin-top: 15%;
-    animation: krug 2s infinite forwards;
+    animation: krug 2.5s infinite forwards;
 }
 @keyframes krug{
 0%{
@@ -27,7 +27,7 @@ body{
 }
 25%{
     border-color: gold;
-    transform: scale(1.4);
+    transform: scale(3);
 }
 50%{
     border-color:greenyellow;
@@ -35,18 +35,18 @@ body{
 }
 75%{
     border-color:blueviolet;
-    transform:scale(2)
+    transform:scale(1.4);
 }
 100%{
     border-color: rgb(255, 255, 255);
-    transform: scale(1)
+    transform: scale(1);
 }
 }
 .kvadrat{
-    width: 75px;
-    height: 75px;
-    border: 10px solid lightgreen;
-    animation: kvadrat 3s infinite ease-in-out alternate-reverse;
+    width: 180px;
+    height: 180px;
+    border: 5px solid lightgreen;
+    animation: kvadrat 2.5s infinite ease-in-out alternate-reverse;
 }
 @keyframes kvadrat{
     0%{
@@ -56,20 +56,52 @@ body{
     }
     25%{
         border-color: rgb(132, 0, 255);
-        border-width: 10px;
+        border-width: 1px;
     }
     50%{
         border-color: rgb(77, 203, 235);
-        border-width: 20px;
+        border-width: 8px;
     }
     75%{
         border-color: rgb(250, 0, 0);
-        border-width: 40px;
+        border-width: 3px;
     }
     100%{
         transform: rotate(360deg);
         border-color: lightgreen;
         border-width: 5px;
     }
-
+}
+    .krug1{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 200px;
+        height: 160px;
+        border: 10px solid red;
+        border-radius: 50%;
+        margin-top: 15%;
+        animation: krug1 2.5s infinite forwards;
+    }
+    @keyframes krug1{
+    0%{
+        border-color: red;
+        transform: scale(1);
+    }
+    25%{
+        border-color: rgb(10, 241, 87);
+        transform: scale(1.4);
+    }
+    50%{
+        border-color:rgb(248, 9, 228);
+        transform: scale(0.2);
+    }
+    75%{
+        border-color:rgb(0, 247, 255);
+        transform:scale(3);
+    }
+    100%{
+        border-color: rgb(255, 255, 255);
+        transform: scale(1);
+    }
 }
